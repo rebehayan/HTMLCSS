@@ -1,4 +1,10 @@
-## HTML + CSS + Webiste Basic
+## HTML + CSS + DeepDive 실무기초
+
+해당과정은 HTML, CSS 기초를 깊게 다루고, 아토믹 디자인 방법론을 통한 UI 구현을 하는 과정입니다. 오프라인에서 진행되는 과정이며, Figma DevMode와 Git환경에서 수업을 진행합니다.<br>
+
+- **커리큘럼 및 신청** [스마트스토어 바로가기](https://smartstore.naver.com/rebehayan/products/7011970346)
+- **개강정보 안내** [유튜브 바로가기](https://www.youtube.com/rebehayan)
+- **1:1문의** [카카오톡 플러스친구](http://pf.kakao.com/_xmxhxdcC/chat)
 
 ### 코드를 복사합니다.
 
@@ -6,8 +12,8 @@
 npx degit rebehayan/HTMLCSS .
 ```
 
-> degit이란?<br>
-> GitHub 리포지토리의 특정 브랜치 또는 커밋을 클론하지 않고 단순한 복사본을 가져옵니다. .git 폴더를 포함하지 않으므로 클론 후 버전 관리가 필요 없는 경우에 적합합니다.
+> **degit이란?**<br>
+> GitHub 리포지토리의 특정 브랜치 또는 커밋을 클론하지 않고 단순한 복사본을 가져옵니다.<br> .git 폴더를 포함하지 않으니 참고바랍니다.
 
 ### 설치순서
 
