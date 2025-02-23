@@ -9,11 +9,11 @@
     position: relative;
     &::before {
       content: attr(data-filter);
-      font-size: 14px;
       position: absolute;
       left: 0;
       top: 0;
       padding: 10px;
+      font-size: 14px;
       background-color: black;
       color: white;
     }
@@ -60,6 +60,118 @@
 }
 
 /* -------------------------------------------------------------------------- */
+/*                               mix-blend-mode                               */
+/* -------------------------------------------------------------------------- */
+
+.mix-blend-mode {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem 1rem;
+  background-color: lightseagreen;
+  padding: 1rem;
+  span {
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    position: relative;
+  }
+  div:nth-child(1):hover img {
+    mix-blend-mode: normal;
+  }
+  div:nth-child(2):hover img {
+    mix-blend-mode: multiply;
+  }
+  div:nth-child(3):hover img {
+    mix-blend-mode: screen;
+  }
+  div:nth-child(4):hover img {
+    mix-blend-mode: overlay;
+  }
+  div:nth-child(5):hover img {
+    mix-blend-mode: darken;
+  }
+  div:nth-child(6):hover img {
+    mix-blend-mode: lighten;
+  }
+  div:nth-child(7):hover img {
+    mix-blend-mode: color-dodge;
+  }
+  div:nth-child(8):hover img {
+    mix-blend-mode: color-burn;
+  }
+  div:nth-child(9):hover img {
+    mix-blend-mode: hard-light;
+  }
+  div:nth-child(10):hover img {
+    mix-blend-mode: soft-light;
+  }
+  div:nth-child(11):hover img {
+    mix-blend-mode: difference;
+  }
+  div:nth-child(12):hover img {
+    mix-blend-mode: exclusion;
+  }
+}
+
+.bg-blend-mode {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem 1rem;
+  text-align: center;
+  color: #fff;
+
+  div {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: linear-gradient(silver, tomato) sandybrown;
+    align-content: center;
+  }
+  div:nth-child(1):hover {
+    background-blend-mode: normal;
+  }
+  div:nth-child(2):hover {
+    background-blend-mode: multiply;
+  }
+  div:nth-child(3):hover {
+    background-blend-mode: screen;
+  }
+  div:nth-child(4):hover {
+    background-blend-mode: overlay;
+  }
+  div:nth-child(5):hover {
+    background-blend-mode: darken;
+  }
+  div:nth-child(6):hover {
+    background-blend-mode: lighten;
+  }
+  div:nth-child(7):hover {
+    background-blend-mode: color-dodge;
+  }
+  div:nth-child(8):hover {
+    background-blend-mode: color-burn;
+  }
+  div:nth-child(9):hover {
+    background-blend-mode: hard-light;
+  }
+  div:nth-child(10):hover {
+    background-blend-mode: soft-light;
+  }
+  div:nth-child(11):hover {
+    background-blend-mode: difference;
+  }
+  div:nth-child(12):hover {
+    background-blend-mode: exclusion;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                 Background                                 */
 /* -------------------------------------------------------------------------- */
 .background1 {
@@ -74,3 +186,110 @@
   height: 300px;
   border: 3px solid firebrick;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                  Gradient                                  */
+/* -------------------------------------------------------------------------- */
+.linear {
+  height: 200px;
+  border: 3px solid salmon;
+}
+.radial {
+  height: 200px;
+  border: 3px solid salmon;
+}
+.conic {
+  height: 200px;
+  border: 3px solid salmon;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Transform                                 */
+/* -------------------------------------------------------------------------- */
+
+.transform {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem 1rem;
+
+  div {
+    height: 150px;
+    border: 2px solid sandybrown;
+    transition: 1s;
+    text-align: center;
+    align-content: center;
+    &:nth-child(1):hover {
+      rotate: 45deg;
+    }
+    &:nth-child(2):hover {
+      rotate: x 45deg;
+    }
+    &:nth-child(3):hover {
+      rotate: y 45deg;
+    }
+    &:nth-child(4):hover {
+      scale: 1.2;
+    }
+    &:nth-child(5):hover {
+      scale: 1.5 1;
+    }
+    &:nth-child(6):hover {
+      scale: 1 1.5;
+    }
+    &:nth-child(7):hover {
+      transform: skew(20deg);
+    }
+    &:nth-child(8):hover {
+      translate: 20px 20px;
+    }
+    &:nth-child(9):hover {
+      translate: 50px;
+    }
+    &:nth-child(10):hover {
+      translate: 0 50px;
+    }
+    &:nth-child(11):hover {
+      transform: rotate(180deg) scale(1.2);
+    }
+    &:nth-child(12) {
+      transform-origin: left top;
+    }
+    &:nth-child(12):hover {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Transition                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                  Animation                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                  overflow                                  */
+/* -------------------------------------------------------------------------- */
+.overflow {
+  display: flex;
+  gap: 20px;
+}
+.over {
+  width: 200px;
+  height: 200px;
+  border: 3px solid seagreen;
+}
+.hidden {
+  width: 200px;
+  height: 200px;
+  border: 3px solid salmon;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Scroll                                   */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                aspect-ratio                                */
+/* -------------------------------------------------------------------------- */
