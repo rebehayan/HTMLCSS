@@ -1,0 +1,43 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Flex Layout                                */
+/* -------------------------------------------------------------------------- */
+.flex {
+  border: 5px solid seagreen;
+  padding: 10px;
+  > div {
+    border: 3px solid salmon;
+    padding: 10px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Grid Layout                                */
+/* -------------------------------------------------------------------------- */
+.grid {
+  border: 5px solid seagreen;
+  padding: 10px;
+  > div {
+    border: 3px solid salmon;
+    padding: 10px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Position Layout                              */
+/* -------------------------------------------------------------------------- */
+.position {
+  border: 5px solid slateblue;
+  > div {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-content: center;
+    color: white;
+  }
+  .item1 {
+    background-color: seagreen;
+  }
+  .item2 {
+    background-color: salmon;
+  }
+}
