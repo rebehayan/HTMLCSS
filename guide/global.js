@@ -57,7 +57,12 @@ const getState = () => {
 
   // iframe
   const activeNav = sessionStorage.getItem(storageName);
-  frame.setAttribute("src", activeNav);
+
+  if (activeNav === null) {
+    frame.setAttribute("src", "/pages/main.html");
+  } else {
+    frame.setAttribute("src", activeNav);
+  }
 
   // Nav Active
   const gnbs = document.querySelectorAll('[name="gnb"]');
@@ -74,6 +79,9 @@ const getState = () => {
   });
 };
 
+/* -------------------------------------------------------------------------- */
+/*                                    쓰로틀링                                    */
+/* -------------------------------------------------------------------------- */
 function throttle(callback, delay) {
   let lastTime = 0;
   return function (...args) {
